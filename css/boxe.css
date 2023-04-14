@@ -7,7 +7,6 @@
 }
 
 .boxe-bg h1 {
-    text-align: center;
     text-transform: uppercase;
     padding: 20px;
 }
@@ -22,26 +21,42 @@ img {
 }
 
 .boxe-container {
+    padding: 0px 20px 20px 20px !important;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 20px;
+}
+
+.tittle-1 {
+    text-align: start;
+}
+
+.boxe-container-2 {
+    padding: 0px 20px 20px 20px !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row-reverse;
+}
+
+.tittle-2 {
+    text-align: end;
 }
 
 .boxe-text {
     width: 200px;
 }
 
-.jump-rope {
-    color: #00A196;
+.color-1 {
+    color: #ebe708;
 }
 
-.shadow-boxing {
-    color: rgb(50, 205, 115);
+.color-2 {
+    color: rgb(17, 248, 113);
 }
 
-.running {
-    color: rgb(202, 36, 147);
+.color-3 {
+    color: rgb(14, 67, 240);
 }
 
 .boxe-text-title {
