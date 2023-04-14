@@ -4,6 +4,7 @@
 /* css */
 @import url(header.css);
 @import url(main.css);
+@import url(boxe.css);
 
 * {
     margin: 0;

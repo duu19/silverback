@@ -1,0 +1,76 @@
+.boxe-bg {
+    width: 100%;
+    height: auto;
+    background-color: #1c1c1c;
+    font-family: 'Lato', sans-serif;
+    color: #fff;
+}
+
+.boxe-bg h1 {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.img-boxe {
+    width: 400px;
+    border: 2px solid white;
+}
+
+.boxe-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.boxe-text {
+    width: 200px;
+}
+
+.jump-rope {
+    color: #00A196;
+}
+
+.shadow-boxing {
+    color: rgb(50, 205, 115);
+}
+
+.running {
+    color: rgb(202, 36, 147);
+}
+
+.boxe-text-title {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    text-align: start;
+    text-transform: uppercase;
+}
+
+.boxe-text p, h5 {
+    text-align: center;
+}
+
+@media (max-width: 900px) {
+    .boxe-container {
+        flex-wrap: wrap;
+    }
+
+    .img-boxe {
+        width: 600px;
+    }
+    .boxe-text {
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .boxe-text {
+        margin-bottom: 2rem;
+    }
+}
