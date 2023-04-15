@@ -3,7 +3,7 @@
     height: auto;
     background-color: #1c1c1c;
     font-family: 'Lato', sans-serif;
-    color: #fff;
+    color: var(--color-text-1);
 }
 
 .boxe-bg h1 {
@@ -17,7 +17,7 @@ img {
 
 .img-boxe {
     width: 400px;
-    border: 2px solid white;
+    border: 2px solid var(--color-text-1);
 }
 
 .boxe-container {

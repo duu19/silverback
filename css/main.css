@@ -12,7 +12,7 @@
     padding-left: 5%;
     padding-right: 5%;
     text-align: center;
-    color: #fff;
+    color: var(--color-text-1);
     text-shadow: 2px 2px 5px black;
     position: relative;
     top: 50%;
