@@ -1,0 +1,35 @@
+.about-bg {
+    background-color: var(--color-background-2);
+    width: 100%;
+    height: auto;
+}
+
+.about-box-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-box {
+    width: 650px;
+}
+
+.about-tittle {
+    font-size: 1.5rem;
+    color: var(--color-text-4);
+}
+
+.about-box p {
+    margin-bottom: 1rem;
+    white-space: break-spaces;
+}
+
+.p-no-margin {
+    margin-bottom: 0 !important;
+}
+
+.square {
+    height: 150px;
+    width: 250px;
+    background-color: var(--color-text-2);
+}

@@ -1,9 +1,9 @@
 .header-bg {
-    background: var(--color-background-1);
+    background: var(--color-background-2);
 }
 
 .header-bg a {
-    color: var(--color-text-1);
+    color: var(--color-text-3);
     text-decoration: none;
     transition: 0.5s;
     text-transform: uppercase;
