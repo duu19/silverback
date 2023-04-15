@@ -15,9 +15,11 @@
 }
 
 .about-tittle {
-    font-size: 1.5rem;
+    font-size: 1.5rem !important;
     font-weight: bolder;
     color: var(--color-text-4);
+    letter-spacing: 1px;
+    font-family: 'Inter', sans-serif;
 }
 
 .about-box p {
@@ -25,6 +27,7 @@
     margin-bottom: 1rem;
     font-size: 1.1rem;
     white-space: break-spaces;
+    font-weight: 300;
 }
 
 .p-no-margin {

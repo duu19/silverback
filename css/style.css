@@ -1,5 +1,6 @@
 /* fontes */
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 /* css */
 @import url(header.css);
@@ -21,7 +22,7 @@
     --color-background-2: #ffffff;
 
     --color-text-1: #ffffff;
-    --color-text-2: #e6530f;
+    --color-text-2: #0f7ee6;
     --color-text-3: #1c1c1c;
     --color-text-4: #353535;
 }

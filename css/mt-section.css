@@ -5,9 +5,11 @@
 }
 
 .motivos-tittle {
-    font-size: 2rem;
+    font-size: 1.5rem !important;
     padding: 0px 20px 20px 0px;
-    color: var(--color-text-4);
+    color: var(--color-text-3);
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .motivos-box {
@@ -26,25 +28,14 @@
 .motivos-text h2 {
     text-align: center;
     text-transform: uppercase;
+    color: var(--color-text-4);
+    letter-spacing: 1px;
 }
 
 .motivos-text p {
     margin-top: 1rem;
-}
-
-.btn {
-    margin-top: 1rem;
-    color: #111;
-    padding: 5px;
-    text-decoration: none;
-    border: 1px solid var(--color-text-2);
-    display: inline-block;
-}
-
-.btn:hover {
-    transition: 0.5s;
-    background: var(--color-text-2);
-    color: #fff;
+    color: var(--color-text-4);
+    font-weight: 300;
 }
 
 @media (max-width: 900px) {
