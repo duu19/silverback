@@ -41,6 +41,8 @@
 @media (max-width: 900px) {
     .motivos-box {
         flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
     }
 }
 

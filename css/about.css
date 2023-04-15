@@ -48,3 +48,13 @@
     top: 50%;
     transform: translateY(-50%);
 }
+
+@media (max-width: 550px) {
+    .about-box-flex {
+        flex-wrap: wrap-reverse;
+        gap: 20px;
+    }
+    .square {
+        margin: 0 auto;
+    }
+}

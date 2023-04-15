@@ -1,0 +1,39 @@
+.offers-bg {
+    background: var(--color-text-2);
+    height: 400px;
+    width: 100%;
+}
+
+.square-offers-box {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.square-offers-1 {
+    top: 20px;
+    position: relative;
+    width: 250px;
+    display: block;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.459);
+    z-index: 9999;
+}
+
+.square-offers-2 {
+    width: 300px;
+    height: 100px;
+    display: block;
+    background-color: rgba(255, 238, 0, 0.377);
+    z-index: 1;
+}
+
+.square-offers-text {
+    color: black;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 20px;
+}
