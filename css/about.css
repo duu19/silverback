@@ -16,11 +16,14 @@
 
 .about-tittle {
     font-size: 1.5rem;
+    font-weight: bolder;
     color: var(--color-text-4);
 }
 
 .about-box p {
+    color: var(--color-text-4);
     margin-bottom: 1rem;
+    font-size: 1.1rem;
     white-space: break-spaces;
 }
 
@@ -32,4 +35,13 @@
     height: 150px;
     width: 250px;
     background-color: var(--color-text-2);
+}
+
+.square-img {
+    width: 100px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }

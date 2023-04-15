@@ -34,6 +34,14 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    overflow-x: hidden !important;
+}
+
+img {
+    max-width: 100%;
+}
+
 .container {
     margin: 0 auto;
     max-width: 1300px;
