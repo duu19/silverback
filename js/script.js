@@ -43,3 +43,21 @@ const mobileNavbar = new MobileNavbar(
     ".nav-list li",
 );  
 mobileNavbar.init();
+
+// slider
+const slider = document.querySelector(".slider");
+const slides = slider.querySelectorAll("#slider-img");
+let currentSlide = 0;
+
+setInterval(() => {
+  // não mostrar todos
+  slides[currentSlide].classList.remove('active');
+
+  currentSlide++;
+  if (currentSlide >= slides.length) {
+    currentSlide = 0;
+  }
+
+  // exibir o próximo slide
+  slides[currentSlide].classList.add('active');
+}, 5000);
