@@ -1,0 +1,45 @@
+.cite-bg {
+    height: 400px;
+    width: 100%;
+    background-color: var(--color-background-2);
+    position: relative;
+}
+
+.cite-div {
+    display: grid;
+    place-items: center;
+}
+
+blockquote {
+    padding: 20px;
+    color: var(--color-text-1);
+    z-index: 999;
+    position: absolute;
+    top: 25%;
+    text-shadow: 2px 2px 5px black;
+    font-size: 3rem;
+    width: 800px;
+}
+
+blockquote::after {
+    content: '”';
+    font-size: 8rem;
+    color: var(--color-text-1);
+    position: absolute;
+}
+
+blockquote::before {
+    content: '“';
+    font-size: 8rem;
+    left: -20px;
+    top: -5px;
+    color: var(--color-text-1);
+    position: absolute;
+}
+
+.ippo-background {
+    width: 600px;
+    display: block;
+    margin: 0 auto;
+    z-index: 4;
+}

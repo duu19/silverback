@@ -1,10 +1,11 @@
 .info-bg {
     height: auto;
     width: 100%;
-    background: var(--color-background-1);
+    background: var(--color-background-2);
 }
 
 .box-info {
+    padding: 0px 20px 20px 20px !important;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -26,6 +27,7 @@ img {
 .info-text-box {
     background: var(--color-background-2);
     color: var(--color-text-4);
+    border: 2px solid var(--color-text-2);
     font-size: 16px;
     text-align: center;
     z-index: 999;
