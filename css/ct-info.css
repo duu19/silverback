@@ -1,12 +1,10 @@
 .info-bg {
     height: auto;
     width: 100%;
-    background: var(--color-background-2);
-    font-family: 'Lato', sans-serif;
+    background: var(--color-background-1);
 }
 
 .box-info {
-    padding-top: 0px !important;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -20,12 +18,15 @@ img {
 
 .info-img {
     width: 600px;
+    height: 400px;
+    object-fit: cover;
     z-index: 2;
 }
 
 .info-text-box {
-    background: var(--color-text-2);
-    color: var(--color-text-1);
+    background: var(--color-background-2);
+    color: var(--color-text-4);
+    font-size: 16px;
     text-align: center;
     z-index: 999;
     width: 350px;
@@ -47,13 +48,18 @@ img {
 .info-text h2 {
     text-transform: uppercase;
     white-space: nowrap;
+    margin-bottom: 0.5rem;
+}
+
+.info-text p {
+    margin-bottom: 0.5rem;
 }
 
 .btn-info {
-    color: var(--color-text-1);
+    color: var(--color-text-4);
     padding: 5px;
     text-decoration: none;
-    border-bottom: 2px solid var(--color-text-1);
+    border-bottom: 2px solid var(--color-text-4);
     display: inline-block;
     font-weight: bold;
     letter-spacing: 1px;
@@ -62,8 +68,8 @@ img {
 
 .btn-info:hover {
     transition: 0.5s;
-    color: var(--color-text-3);
-    border-bottom: 2px solid var(--color-text-3);
+    color: var(--color-text-2);
+    border-bottom: 2px solid var(--color-text-2);
 }
 
 @media (max-width: 900px) {
@@ -75,14 +81,7 @@ img {
 @media (max-width: 550px) {
     .info-text-box {
         width: 300px;
-        height: 200px;
+        height: 250px;
         font-size: 12px;
-    }
-    .info-bg {
-        margin-bottom: 2rem;
-    }
-    .box-info p {
-        padding: 5px;
-        display: block;
     }
 }

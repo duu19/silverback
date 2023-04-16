@@ -1,8 +1,8 @@
 .boxe-bg {
     width: 100%;
     height: auto;
-    background: var(--color-background-1);
-    color: var(--color-text-1);
+    background: var(--color-background-2);
+    color: var(--color-text-4);
 }
 
 .boxe-bg h1 {
@@ -10,13 +10,11 @@
     padding: 20px;
 }
 
-img {
-    max-width: 100%;
-}
-
 .img-boxe {
-    width: 400px;
-    border: 2px solid var(--color-text-1);
+    max-width: 450px;
+    height: 350px;
+    object-fit: cover;
+    border: 2px solid var(--color-text-2)
 }
 
 .boxe-container {
@@ -91,6 +89,9 @@ img {
 }
 
 @media (max-width: 500px) {
+    .img-boxe {
+        width: 350px;
+    }
     .boxe-text {
         margin-bottom: 2rem;
     }
