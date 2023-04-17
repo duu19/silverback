@@ -27,7 +27,7 @@ img {
 .info-text-box {
     background: var(--color-background-2);
     color: var(--color-text-4);
-    border: 2px solid var(--color-text-2);
+    border: 2px solid var(--color-text-4);
     font-size: 16px;
     text-align: center;
     z-index: 999;
@@ -51,6 +51,7 @@ img {
     text-transform: uppercase;
     white-space: nowrap;
     margin-bottom: 0.5rem;
+    color: var(--color-text-2);
 }
 
 .info-text p {
