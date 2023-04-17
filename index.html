@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-    <title> SILVERBACK - Centro de Treinamento </title>
+    <title> SB - Centro de Treinamento </title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 </head>
@@ -181,14 +181,36 @@
 
     <!-- slider -->
     <section class="slider-bg">
-        <div class="slider container">
-            <img src="img/slide-1.jpg" alt="Criança praticando boxe" class="active" id="slider-img">
-            <img src="img/slide-2.webp" alt="Treino de boxe" id="slider-img">
-            <img src="img/slide-3.jpeg" alt="Academia de boxe" id="slider-img">
-            <img src="img/slide-4.jpg" alt="Treino de boxe"id="slider-img">
-            <img src="img/slide-5.jpg" alt="Treino prático de boxe" id="slider-img">
-            <img src="img/slide-6.jpg" alt="Luvas de boxe" id="slider-img">
-          </div>
+        <div class="slider-box container">
+            <div class="slider">
+                <img src="img/slide-1.jpg" alt="Criança praticando boxe" class="active" id="slider-img">
+                <img src="img/slide-2.webp" alt="Treino de boxe" id="slider-img">
+                <img src="img/slide-3.jpeg" alt="Academia de boxe" id="slider-img">
+                <img src="img/slide-4.jpg" alt="Treino de boxe"id="slider-img">
+                <img src="img/slide-5.jpg" alt="Treino prático de boxe" id="slider-img">
+                <img src="img/slide-6.jpg" alt="Luvas de boxe" id="slider-img">
+              </div>
+              <div class="contact">
+                    <h2>entre em contato</h2>
+                    <form action="" class="form-contact">
+                        <div class="label-float">
+                            <input type="text" placeholder=" " required/>
+                            <label>Nome completo</label>
+                          </div>
+                          <div class="label-float">
+                            <input type="email" placeholder=" " required/>
+                            <label>E-mail</label>
+                          </div>
+                        <div class="label-float">
+                            <input type="text" placeholder=" " required/>
+                            <label>Telefone</label>
+                        </div>
+                        <label for="mensagem">Mensagem</label>
+                        <textarea name="" id="mensagem" cols="30" rows="10"></textarea>
+                        <button class="btn-contact">Enviar</button>
+                    </form>
+              </div>
+        </div>
     </section>
 
     <aside class="cite-bg">
@@ -217,8 +239,8 @@
                 <ul>
                     <li><a href="tel:551499999999">(14) 9999-9999</a></li>
                     <li><a href="mailto:duardohenriqe19@gmail.com">duardohenriqe19@gmail.com</a></li>
-                    <li><a href="#">Rua Terra do Nunca, 123</a></li>
-                    <li><a href="#">Bauru - SP</a></li>
+                    <li>Rua Terra do Nunca, 123</li>
+                    <li>Bauru - SP</li>
                 </ul>
             </div>
             <div>
@@ -234,7 +256,7 @@
         <p class="footer-link">Desenvolvido por <a href="https://github.com/duu19">Eduardo Henrique</a></p>
     </footer>
 
-<!-- js -->    
+<!-- js -->
 <script src="js/script.js"></script>
 </body>
 </html>

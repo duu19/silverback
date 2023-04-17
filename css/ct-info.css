@@ -5,7 +5,6 @@
 }
 
 .box-info {
-    padding: 0px 20px 20px 20px !important;
     display: flex;
     align-items: center;
     justify-content: space-between;
