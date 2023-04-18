@@ -3,6 +3,7 @@
 }
 
 .slider-box {
+  padding-top: 0px !important;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -10,7 +11,7 @@
 
 .slider {
   width: 100%;
-  height: 500px;
+  height: 400px;
   overflow: hidden;
   position: relative;
 }
@@ -83,7 +84,7 @@
 }
 
 .label-float input:required:invalid + label{
-  color: red;
+  color: var(--color-text-4);
 }
 .label-float input:focus:required:invalid{
   border-bottom: 2px solid red;
@@ -96,8 +97,13 @@
   color: var(--color-text-2);
 }
 
+.label-msg {
+  color: var(--color-text-4);
+}
+
 textarea {
   border: transparent;
+  height: 100px;
   border-bottom: 2px solid lightgrey;
 }
 
@@ -124,4 +130,21 @@ textarea:focus-visible {
 .btn-contact:hover {
   transition: 0.4s;
   background: var(--color-text-4);
+}
+
+@media (max-width: 1250px) {
+  .slider-box {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 450px) {
+  .contact h2 {
+    margin-top: 20px;
+    font-size: 2rem;
+  }
+  .label-float input {
+    width: 350px;
+  }
 }
