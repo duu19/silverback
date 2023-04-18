@@ -97,14 +97,10 @@
   color: var(--color-text-2);
 }
 
-.label-msg {
-  color: var(--color-text-4);
-}
-
 textarea {
   border: transparent;
   height: 100px;
-  border-bottom: 2px solid lightgrey;
+  border-bottom: 2px solid lightgray;
 }
 
 textarea:focus-visible {
@@ -112,9 +108,38 @@ textarea:focus-visible {
   border-bottom: 2px solid var(--color-text-2);
 }
 
+textarea:focus~.floating-label,
+textarea:not(:placeholder-shown)~.floating-label,
+input:not(:focus):valid~.floating-label {
+  top: -18px;
+  bottom: 10px;
+  left: 0px;
+  opacity: 1;
+  color: var(--color-text-2);
+}
+
+.scheme-des textarea {
+  width: 600px;
+  resize: none;
+}
+
+.floating-label {
+  position: absolute;
+  pointer-events: none;
+  left: 2px;
+  top: 5px;
+  transition: 0.3s ease all;
+  color: var(--color-text-4);
+  font-size: 1rem;
+}
+
+.form-float {
+  position: relative;
+  margin-bottom: 16px;
+}
+
 .btn-contact {
   display: flex;
-  margin-top: 1rem;
   justify-content: center;
   width: 100%;
   padding: 10px 20px;
@@ -145,6 +170,9 @@ textarea:focus-visible {
     font-size: 2rem;
   }
   .label-float input {
+    width: 350px;
+  }
+  .scheme-des textarea {
     width: 350px;
   }
 }
