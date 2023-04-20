@@ -32,7 +32,7 @@
       <!-- main -->
     <main class="main-bg">
         <div class="main-box">
-            <span class="sb-span">silverback #1</span>
+            <span class="sb-span" id="tittleSB">silverback #1</span>
             <h1>Fundamentos<br>& Preparação</h1>
             <p>Esses são nossos pilares</p>
         </div>
@@ -42,7 +42,7 @@
     <section class="about-bg container">
         <div class="about-box-flex">
             <div class="about-box">
-                <p class="about-tittle">BEM VINDO À SUA MAIS NOVA <strong>EXPERIÊNCIA</strong></p>
+                <p class="about-tittle">BEM VINDO À SUA MAIS NOVA <span id="draw">EXPERIÊNCIA</span></p>
                 <p>Viva e sinta o que é estar dentro de uma academia de boxe que extrai o máximo de cada um de forma totalmente diferente do que você está acostumado!</p>
                 <p>Só te pedimos disposição e comprometimento.</p>
                 <p>Vamos te ensinar desde o básico do boxe, como e porque praticar esse esporte que vai fazer parte do restante da sua vida.</p>
@@ -68,42 +68,28 @@
         <!-- cards -->
         <section class="cards-bg">
 
-            <h1 class="cards-tittle container">Efeitos <strong>terapêuticos</strong> e <strong>psicológicos</strong></h1>
+            <h1 class="cards-tittle container">Efeitos <span id="draw2">terapêuticos</span> e <span id="draw3">psicológicos</span></h1>
 
-            <div class="container cards-box">
-                <div class="cards">
-                    <div class="animated-border"></div>
-                    <div class="corner">
-                      <div class="content">
+            <div class="cards-box container">
+                    <div id="cardsRough1">
                         <div class="cards-text">
                             <h2>Reduz o estresse</h2>
                             <p>Boxe certamente não é fácil, porém, quando colocado em prática, aumenta a autoestima e autoconfiança do praticante, que consegue desenvolver segurança e tranquilidade frente aos problemas e obstáculos com o qual se depara em seu dia a dia.</p>
                         </div>
-                      </div>
                     </div>
-                  </div>
-                  <div class="cards">
-                    <div class="animated-border"></div>
-                    <div class="corner">
-                      <div class="content">
+                    <div id="cardsRough2">
                         <div class="cards-text">
                             <h2>resistência e força</h2>
                             <p>Alguns exercícios durante as aulas é ensinar que, com determinação e força de vontade, todos são capazes de encontrar soluções para qualquer tipo de problema, fornecendo habilidades para o aluno agir em situações de prevenção e superar qualquer tipo situação de agressão, em todos os seus aspectos físicos e psicológicos.</p>
                         </div>
-                      </div>
                     </div>
-                  </div>
-                  <div class="cards">
-                    <div class="animated-border"></div>
-                    <div class="corner">
-                      <div class="content">
+                    <div id="cardsRough3">
                         <div class="cards-text">
                             <h2>defesa pessoal</h2>
                                 <p>Boxe proporciona ao ser humano segurança e confiança em si mesmo, tornando-o mais controlado e assertivo ao reconhecer as manifestações do seu próprio medo. Enfrentar e resolver situações difíceis e de alta complexidade, faz bem à autoestima, aumenta a segurança e a autoconfiança.</p>
                         </div>
-                      </div>
                     </div>
-                  </div>
+                    
             </div>
             
 
@@ -302,6 +288,40 @@
         <p class="footer-link">Desenvolvido por <a href="https://github.com/duu19">Eduardo Henrique</a></p>
     </footer>
 
+    <!-- lib rough notation -->
+    <script type="module">
+        import { annotate } from 'https://unpkg.com/rough-notation?module';
+
+        const n1 = document.querySelector('#tittleSB');
+        const a1 = annotate(n1, { type: 'highlight', color: '#631f63', padding: 10 });
+        
+        const n2 = document.querySelector('#draw');
+        const a2 = annotate(n2, { type: 'box', color: '#631f63', padding: 5 });     
+        
+        const n3 = document.querySelector('#draw2');
+        const a3 = annotate(n3, { type: 'underline', color: '#631f63', padding: 0 });
+
+        const n4 = document.querySelector('#draw3');
+        const a4 = annotate(n4, { type: 'underline', color: '#631f63', padding: 0 });
+
+        const n5 = document.querySelector('#cardsRough1');
+        const a5 = annotate(n5, { type: 'box', color: '#631f53', padding: 0 });
+
+        const n6 = document.querySelector('#cardsRough2');
+        const a6 = annotate(n6, { type: 'box', color: '#631f53', padding: 0 });
+
+        const n7 = document.querySelector('#cardsRough3');
+        const a7 = annotate(n7, { type: 'box', color: '#631f53', padding: 0 });
+
+        a1.show();
+        a2.show();
+        a3.show();
+        a4.show();
+        a5.show();
+        a6.show();
+        a7.show();
+        
+      </script>
 <!-- js -->
 <script src="js/script.js"></script>
 </body>

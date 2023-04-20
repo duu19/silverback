@@ -26,6 +26,7 @@
 }
 
 .sb-span::before {
+    display: none !important;
     content: '';
     display: block;
     width: 320px;
