@@ -24,8 +24,10 @@ img {
 }
 
 .info-text-box {
-    background: var(--color-background-2);
-    color: var(--color-text-4);
+    background: linear-gradient(-45deg, #ee7752, #631f63, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+    color: var(--color-text-1);
     font-size: 16px;
     text-align: center;
     z-index: 999;
@@ -36,6 +38,18 @@ img {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 .info-text {
@@ -49,7 +63,6 @@ img {
     text-transform: uppercase;
     white-space: nowrap;
     margin-bottom: 0.5rem;
-    color: var(--color-text-2);
 }
 
 .info-text p {
@@ -57,10 +70,10 @@ img {
 }
 
 .btn-info {
-    color: var(--color-text-4);
+    color: var(--color-text-1);
     padding: 5px;
     text-decoration: none;
-    border-bottom: 2px solid var(--color-text-4);
+    border-bottom: 2px solid var(--color-text-1);
     display: inline-block;
     font-weight: bold;
     letter-spacing: 1px;
@@ -69,8 +82,8 @@ img {
 
 .btn-info:hover {
     transition: 0.5s;
-    color: var(--color-text-2);
-    border-bottom: 2px solid var(--color-text-2);
+    color: var(--color-text-3);
+    border-bottom: 2px solid var(--color-text-3);
 }
 
 @media (max-width: 900px) {
