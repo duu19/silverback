@@ -101,6 +101,7 @@ textarea {
   border: transparent;
   height: 100px;
   border-bottom: 2px solid lightgray;
+  margin-top: 1rem;
 }
 
 textarea:focus-visible {
@@ -111,7 +112,7 @@ textarea:focus-visible {
 textarea:focus~.floating-label,
 textarea:not(:placeholder-shown)~.floating-label,
 input:not(:focus):valid~.floating-label {
-  top: -18px;
+  top: -4px;
   bottom: 10px;
   left: 0px;
   opacity: 1;
@@ -127,7 +128,7 @@ input:not(:focus):valid~.floating-label {
   position: absolute;
   pointer-events: none;
   left: 2px;
-  top: 5px;
+  top: 6px;
   transition: 0.3s ease all;
   color: var(--color-text-4);
   font-size: 1rem;
