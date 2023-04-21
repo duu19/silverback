@@ -48,26 +48,30 @@
 }
 
 .footer-link {
-    color: black;
+    background: var(--color-text-2);
+    color: var(--color-text-1);
     text-align: center;
-    padding-top: 0px !important;
     padding: 20px;
     font-size: 1.2rem;
 }
 
 .footer-link a {
-    color: var(--color-text-2);
+    color: var(--color-text-1);
     text-decoration: none;
 }
 
 .footer-link a:hover {
-    transition: 0.3s;
-    color: var(--color-text-3);
     text-decoration: underline;
 }
 
 @media (max-width: 850px) {
     .footer-box {
         flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 400px) {
+    .footer-link {
+        font-size: 1rem;
     }
 }

@@ -81,10 +81,19 @@
 }
 
 @media (max-width: 500px) {
+    .tittle-2 {
+        text-align: start;
+    }
     .img-boxe {
         width: 350px;
     }
     .boxe-text {
         margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .img-boxe {
+        width: 300px;
     }
 }

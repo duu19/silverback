@@ -99,3 +99,13 @@ img {
         font-size: 12px;
     }
 }
+
+@media (max-width: 350px) {
+    .info-img {
+        width: 300px;
+    }
+    .info-text-box {
+        width: 250px;
+        font-size: 10px;
+    }
+}

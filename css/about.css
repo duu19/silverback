@@ -58,3 +58,9 @@
         margin: 0 auto;
     }
 }
+
+@media (max-width: 400px) {
+    .about-tittle {
+        font-size: 1.2rem !important;
+    }
+}

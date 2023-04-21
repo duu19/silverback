@@ -44,20 +44,37 @@ const mobileNavbar = new MobileNavbar(
 );  
 mobileNavbar.init();
 
-// slider
-const slider = document.querySelector(".slider");
-const slides = slider.querySelectorAll("#slider-img");
-let currentSlide = 0;
+// carousel
+const slider = document.querySelector('.slider');
+const sliderInner = document.querySelector('.slider-inner');
+const slides = document.querySelectorAll('.slide');
+const prevBtn = document.querySelector('.prev');
+const nextBtn = document.querySelector('.next');
+let slideIndex = 0;
 
-setInterval(() => {
-  // não mostrar todos
-  slides[currentSlide].classList.remove('active');
-
-  currentSlide++;
-  if (currentSlide >= slides.length) {
-    currentSlide = 0;
+// próximo slide
+function nextSlide() {
+  if (slideIndex === slides.length - 1) {
+        slideIndex = 0;
+  } else {
+        slideIndex++;
   }
+  sliderInner.style.transform = `translateX(-${slideIndex * 600}px)`;
+}
 
-  // exibir o próximo slide
-  slides[currentSlide].classList.add('active');
-}, 5000);
+// slide anterior
+function prevSlide() {
+  if (slideIndex === 0) {
+        slideIndex = slides.length - 1;
+  } else {
+        slideIndex--;
+  }
+  sliderInner.style.transform = `translateX(-${slideIndex * 600}px)`;
+}
+
+// botões
+  nextBtn.addEventListener('click', nextSlide);
+  prevBtn.addEventListener('click', prevSlide);
+
+// passar slides automaticamente
+setInterval(nextSlide, 5000);
