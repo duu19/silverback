@@ -13,6 +13,7 @@
 @import url(offers.css);
 @import url(equipment.css);
 @import url(footer.css);
+@import url(hall.css);
 
 * {
     margin: 0;
@@ -26,7 +27,7 @@
     --color-background-2: #ffffff;
 
     --color-text-1: #ffffff;
-    --color-text-2: #631f63;
+    --color-text-2: #8A2BE2;
     --color-text-3: #1c1c1c;
     --color-text-4: #353535;
 }

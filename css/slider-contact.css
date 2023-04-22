@@ -43,7 +43,7 @@
 }
 
 .slider-nav button {
-  background-color: var(--color-text-2);
+  background: var(--color-text-2);
   border: none;
   color: #fff;
   padding: 10px;

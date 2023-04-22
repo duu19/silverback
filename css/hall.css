@@ -1,0 +1,55 @@
+.main-hall-bg {
+    width: 100%;
+    height: auto;
+    background: var(--color-text-1);
+}
+
+.main-hall-bg h1 {
+    color: var(--color-text-4);
+    text-transform: uppercase;
+}
+
+.hall-cards-box {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.hall-cards img {
+    margin-top: 25px;
+    margin-left: 20px;
+    object-fit: cover;
+    height: 350px;
+    width: 350px;
+    position: relative;
+    z-index: 1;
+}
+
+.hall-card-background {
+    position: absolute;
+    top: 280px;
+    z-index: 222;
+    height: 100px;
+    width: 390px;
+    background-color: #353535;
+    color: white;
+}
+
+.hall-card-background-text {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+}
+
+.hall-card-background-text p {
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.hall-card-background-text span {
+    font-size: 1rem;
+}
