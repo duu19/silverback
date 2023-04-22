@@ -2,17 +2,29 @@
     src: url(../fonts/I\ AM\ A\ PLAYER.ttf);
     font-family: 'Player-Regular';    
     font-weight: normal;
-} 
+}
 
 .main-hall-bg {
+    height: 80vh;
+    width: 100%;
+    background-image: url(../img/background4.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section-hall-bg {
     width: 100%;
     height: auto;
     background: var(--color-text-1);
 }
 
-.main-hall-bg h1 {
+.section-hall-bg h1 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
     color: var(--color-text-4);
     text-transform: uppercase;
+    font-family: 'Player-Regular'; 
 }
 
 .hall-cards-box {
@@ -50,6 +62,7 @@
 }
 
 .hall-card-record {
+    color: var(--color-text-2);
     height: auto;
     padding: 20px 20px 10px 20px;
     text-transform: uppercase;
@@ -112,11 +125,11 @@
     font-family: "Player-Regular";
 }
 
-.p-weight {
+.p-weight-0, .p-weight-1, .p-weight-2, .p-weight-3, .p-weight-4, .p-weight-5 {
     position: relative;
 }
 
-.p-weight::before {
+.p-weight-0::before {
     content: '134.5 lbs (60.91 kg)';
     color: var(--color-text-4);
     font-family: 'Lato', sans-serif;
@@ -128,11 +141,11 @@
     top: 3px;
 }
 
-.p-age {
+.p-age-0, .p-age-1, .p-age-2, .p-age-3, .p-age-4, .p-age-5 {
     position: relative;
 }
 
-.p-age::before {
+.p-age-0::before {
     content: '28';
     color: var(--color-text-4);
     font-family: 'Lato', sans-serif;
@@ -144,11 +157,11 @@
     top: 3px;
 }
 
-.p-home {
+.p-home-0, .p-home-1, .p-home-2, .p-home-3, .p-home-4, .p-home-5 {
     position: relative;
 }
 
-.p-home::before {
+.p-home-0::before {
     content: 'USA, Baltimore, Maryland';
     color: var(--color-text-4);
     font-family: 'Lato', sans-serif;
@@ -161,6 +174,192 @@
     top: 2px;
 }
 
+.p-weight-1::before {
+    content: '147 lbs (66.82 kg)';
+    color: var(--color-text-4);
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    position: absolute;
+    font-size: 12px;
+    left: 100px;
+    top: 3px;
+}
+
+.p-age-1::before {
+    content: '44';
+    color: var(--color-text-4);
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    position: absolute;
+    font-size: 12px;
+    left: 100px;
+    top: 3px;
+}
+
+.p-home-1::before {
+    content: 'Philippines, General Santos';
+    color: var(--color-text-4);
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    position: absolute;
+    font-size: 11px;
+    white-space: nowrap;
+    left: 100px;
+    top: 2px;
+}
+
+.p-weight-2::before {
+    content: '226 lbs (102.73 kg)';
+    color: var(--color-text-4);
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    position: absolute;
+    font-size: 12px;
+    left: 100px;
+    top: 3px;
+}
+
+.p-age-2::before {
+    content: '37';
+    color: var(--color-text-4);
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    position: absolute;
+    font-size: 12px;
+    left: 100px;
+    top: 3px;
+}
+
+.p-home-2::before {
+    content: 'USA, Tuscaloosa, Alabama';
+    color: var(--color-text-4);
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    position: absolute;
+    font-size: 12px;
+    white-space: nowrap;
+    left: 100px;
+    top: 2px;
+}
+
+.p-weight-3::before {
+    content: '262 lbs (119.09 kg)';
+    color: var(--color-text-4);
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    position: absolute;
+    font-size: 12px;
+    left: 100px;
+    top: 3px;
+}
+
+.p-age-3::before {
+    content: '33';
+    color: var(--color-text-4);
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    position: absolute;
+    font-size: 12px;
+    left: 100px;
+    top: 3px;
+}
+
+.p-home-3::before {
+    content: 'USA, Imperial, California';
+    color: var(--color-text-4);
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    position: absolute;
+    font-size: 12px;
+    white-space: nowrap;
+    left: 100px;
+    top: 2px;
+}
+
+.p-weight-4::before {
+    content: '160 lbs (72.73 kg)';
+    color: var(--color-text-4);
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    position: absolute;
+    font-size: 12px;
+    left: 100px;
+    top: 3px;
+}
+
+.p-age-4::before {
+    content: '32';
+    color: var(--color-text-4);
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    position: absolute;
+    font-size: 12px;
+    left: 100px;
+    top: 3px;
+}
+
+.p-home-4::before {
+    content: 'USA, Houston, Texas ';
+    color: var(--color-text-4);
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    position: absolute;
+    font-size: 12px;
+    white-space: nowrap;
+    left: 100px;
+    top: 2px;
+}
+
+.p-weight-5::before {
+    content: '135 lbs (61.36 kg)';
+    color: var(--color-text-4);
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    position: absolute;
+    font-size: 12px;
+    left: 100px;
+    top: 3px;
+}
+
+.p-age-5::before {
+    content: '41';
+    color: var(--color-text-4);
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    position: absolute;
+    font-size: 12px;
+    left: 100px;
+    top: 3px;
+}
+
+.p-home-5::before {
+    content: 'Cuba, Miami, Florida';
+    color: var(--color-text-4);
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    position: absolute;
+    font-size: 12px;
+    white-space: nowrap;
+    left: 100px;
+    top: 2px;
+}
+
+
 @media (max-width: 1100px) {
     .hall-cards-box {
         flex-wrap: wrap;
@@ -170,6 +369,9 @@
 
 @media (max-width: 560px) {
     .main-hall-bg h1 {
-        font-size: 1.3rem;
+        font-size: 3.5rem;
+    }
+    .section-hall-bg h1 {
+        font-size: 1rem;
     }
 }
