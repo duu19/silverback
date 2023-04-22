@@ -173,6 +173,20 @@ input:not(:focus):valid~.floating-label {
   cursor: pointer;
 }
 
+#erro-nome, #erro-email, #erro-telefone {
+  position: absolute;
+  top: 40px;
+  color: var(--color-text-4);
+  font-size: 14px;
+}
+
+#erro-mensagem {
+  position: absolute;
+  color: var(--color-text-4);
+  font-size: 14px;
+  top: 115px;
+}
+
 .btn-contact:hover {
   transition: 0.4s;
   background: var(--color-text-4);

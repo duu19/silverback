@@ -203,24 +203,28 @@
               </div>
               <div class="contact">
                     <h2>entre em contato</h2>
-                    <form action="" class="form-contact">
+                    <form action="" class="form-contact" name="formContact" onsubmit="return validarContato()" id="form">
                         <div class="label-float">
-                            <input type="text" placeholder=" " required/>
+                            <input type="text" placeholder=" "  id="nome" name="nome"/>
                             <label>Nome completo</label>
+                            <div id="erro-nome"></div>
                           </div>
                           <div class="label-float">
-                            <input type="email" placeholder=" " required/>
+                            <input type="email" placeholder=" " id="email" name="email"/>
                             <label>E-mail</label>
+                            <div id="erro-email"></div>
                           </div>
                         <div class="label-float">
-                            <input type="text" placeholder=" " required/>
+                            <input type="number" placeholder=" " id="telefone" name="telefone"/>
                             <label>Telefone</label>
+                            <div id="erro-telefone"></div>
                         </div>
                         <div class="form-float scheme-des">
-                            <textarea name="" class="inputText" id="" cols="30" rows="10" placeholder=" "></textarea>
+                            <textarea name="mensagem" class="inputText" id="" cols="30" rows="10" placeholder=" "></textarea>
                             <label class="floating-label">Mensagem</label>
+                            <div id="erro-mensagem"></div>
                           </div>
-                        <button class="btn-contact">Enviar</button>
+                        <button type="submit" class="btn-contact">Enviar</button>
                     </form>
               </div>
         </div>

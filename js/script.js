@@ -78,3 +78,38 @@ function prevSlide() {
 
 // passar slides automaticamente
 setInterval(nextSlide, 5000);
+
+// validar formulário
+
+function validarContato() {
+   let nome = document.forms["formContact"]["nome"].value;
+   let email = document.forms["formContact"]["email"].value;
+   let telefone = document.forms["formContact"]["telefone"].value;
+   let mensagem = document.forms["formContact"]["mensagem"].value;
+  
+   if (nome == "" || nome.length < 12) {
+      document.getElementById("erro-nome").innerHTML = "Informe seu nome completo!";
+      return false;
+      }
+      
+      if (email == "" || !/\S+@\S+\.\S+/.test(email)) {
+            document.getElementById("erro-email").innerHTML = "Informe um e-mail válido!";
+            return false;
+          }
+
+   if (telefone == "" || telefone.length < 5) {
+      document.getElementById("erro-telefone").innerHTML = "Informe seu telefone corretamente!";
+      return false;
+      }
+   if (mensagem == "" || mensagem.length < 5) {
+      document.getElementById("erro-mensagem").innerHTML = "Preencha a mensagem com o assunto.";
+            return false;
+      }
+      return true;
+};
+
+/* não recarregar
+document.getElementById("form").addEventListener("submit", function(event) {
+      event.preventDefault();
+});
+*/
