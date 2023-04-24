@@ -20,7 +20,7 @@
 
 .cards-text {
     width: 400px;
-    padding: 15px 20px;
+    padding: 0px 20px;
 }
 
 .cards-text h2 {
@@ -28,13 +28,14 @@
     text-transform: uppercase;
     color: var(--color-text-4);
     letter-spacing: 1px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .cards-text p {
     color: var(--color-text-4);
     font-weight: 300;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 20px;
 }
 
 @media (max-width: 1200px) {

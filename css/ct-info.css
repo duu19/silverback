@@ -24,7 +24,7 @@ img {
 }
 
 .info-text-box {
-    background: linear-gradient(-45deg, #ee7752, #8A2BE2, #5b278b, #451870);
+    background: linear-gradient(-45deg, #1f1924, #733381, #5b278b, #733381);
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
     color: var(--color-text-1);
@@ -82,8 +82,8 @@ img {
 
 .btn-info:hover {
     transition: 0.5s;
-    color: var(--color-text-3);
-    border-bottom: 2px solid var(--color-text-3);
+    color: #dcbbe4;
+    border-bottom: 2px solid #dcbbe4;
 }
 
 @media (max-width: 900px) {

@@ -62,7 +62,7 @@
 }
 
 .hall-card-record {
-    color: var(--color-text-2);
+    color: #612E6C;
     height: auto;
     padding: 20px 20px 10px 20px;
     text-transform: uppercase;
@@ -359,6 +359,28 @@
     top: 2px;
 }
 
+.sponsors-bg {
+    background-color: #111111;
+}
+
+.icons-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icons-box-2 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.icons-box img {
+    width: 250px;
+}
+
+.icons-box-2 img {
+    width: 250px;
+}
+
 
 @media (max-width: 1100px) {
     .hall-cards-box {
@@ -373,5 +395,23 @@
     }
     .section-hall-bg h1 {
         font-size: 1rem;
+    }
+}
+
+@media (max-width: 450px){
+    .icons-box img {
+        width: 100px;
+    }
+    .icons-box-2 img {
+        width: 100px;
+    }
+}
+
+@media (max-width: 360px) {
+    .icons-box img {
+        width: 40px;
+    }
+    .icons-box-2 img {
+        width: 40px;
     }
 }
