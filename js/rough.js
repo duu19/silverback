@@ -22,32 +22,42 @@ const n7 = document.querySelector('#cardsRough3');
 const a7 = annotate(n7, { type: 'box', color: '#111', padding: 0 });
 
 const n8 = document.querySelector('#number1');
-const a8 = annotate(n8, { type: 'box', color: '#353535', padding: 5 });
+const a8 = annotate(n8, { type: 'highlight', color: '#353535', padding: 5 });
 
 const n9 = document.querySelector('#number2');
-const a9 = annotate(n9, { type: 'box', color: '#353535', padding: 5 });
+const a9 = annotate(n9, { type: 'highlight', color: '#353535', padding: 5 });
 
 const n10 = document.querySelector('#number3');
-const a10 = annotate(n10, { type: 'box', color: '#353535', padding: 5 });
+const a10 = annotate(n10, { type: 'highlight', color: '#353535', padding: 5 });
 
 const n11 = document.querySelector('#number4');
-const a11 = annotate(n11, { type: 'box', color: '#353535', padding: 5 });
+const a11 = annotate(n11, { type: 'highlight', color: '#353535', padding: 5 });
 
 const n12 = document.querySelector('#number5');
-const a12 = annotate(n12, { type: 'box', color: '#353535', padding: 5 });
+const a12 = annotate(n12, { type: 'highlight', color: '#353535', padding: 5 });
 
 const n13 = document.querySelector('#number6');
-const a13 = annotate(n13, { type: 'box', color: '#353535', padding: 5 });
+const a13 = annotate(n13, { type: 'highlight', color: '#353535', padding: 5 });
 
 const n14 = document.querySelector('#number7');
-const a14 = annotate(n14, { type: 'box', color: '#353535', padding: 5 });
+const a14 = annotate(n14, { type: 'highlight', color: '#353535', padding: 5 });
 
 const n15 = document.querySelector('#number8');
-const a15 = annotate(n15, { type: 'box', color: '#353535', padding: 5 });
+const a15 = annotate(n15, { type: 'highlight', color: '#353535', padding: 5 });
 
 const n16 = document.querySelector('#number9');
-const a16 = annotate(n16, { type: 'box', color: '#353535', padding: 5 });
+const a16 = annotate(n16, { type: 'highlight', color: '#353535', padding: 5 });
 
+const n21 = document.querySelector('#number10');
+const a21 = annotate(n21, { type: 'highlight', color: '#353535', padding: 5 });
+
+const n22 = document.querySelector('#number11');
+const a22 = annotate(n22, { type: 'highlight', color: '#353535', padding: 5 });
+
+const n23 = document.querySelector('#number12');
+const a23 = annotate(n23, { type: 'highlight', color: '#353535', padding: 5 });
+
+// imagens
 const n17 = document.querySelector('#img-boxe1');
 const a17 = annotate(n17, { type: 'box', color: '#fff', padding: 0 });
 
@@ -56,6 +66,12 @@ const a18 = annotate(n18, { type: 'box', color: '#fff', padding: 0 });
 
 const n19 = document.querySelector('#img-boxe3');
 const a19 = annotate(n19, { type: 'box', color: '#fff', padding: 0 });
+
+const n20 = document.querySelector('#img-boxe4');
+const a20 = annotate(n20, { type: 'box', color: '#fff', padding: 0 });
+
+const n24 = document.querySelector('#contact-tittle');
+const a24 = annotate(n24, { type: 'underline', color: '#612E6C', padding: 5 });
 
 a1.show();
 a2.show();
@@ -76,3 +92,9 @@ a16.show();
 a17.show();
 a18.show();
 a19.show();
+a20.show();
+a21.show();
+a22.show();
+a23.show();
+a24.show();
+

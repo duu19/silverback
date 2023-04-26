@@ -1,0 +1,74 @@
+.contact-map-bg {
+    background-color: var(--color-background-2);
+    height: auto;
+    width: 100%;
+}
+
+.contact-tittle {
+    font-size: 2.2rem;
+    color: #612E6C;
+    text-transform: uppercase;
+    padding-bottom: 0px !important;
+}
+
+.contact-map-box {
+    padding-bottom: 0px !important;
+    display: flex;
+    flex-direction: row;
+}
+
+.map {
+    height: 400px;
+    width: 630px;
+}
+
+.contact-map-text {
+    height: 400px;
+    width: 630px;
+    background: #111;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.contact-text-box {
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    gap: 20px;
+}
+
+.contact-icons-box {
+    margin-top: 20px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: auto;
+    text-align: center;
+    width: 200px;
+}
+
+.contact-ul-icons-box {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+}
+
+.contact-ul-icons-box a {
+    color: #fff;
+}
+
+.contact-icon {
+    font-size: 3.5rem;
+}
+
+.contact-icons-box span {
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.contact-icons-box p {
+    font-size: 1rem;
+}

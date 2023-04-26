@@ -39,6 +39,14 @@
     align-items: center;
 }
 
+.boxe-container-3 {
+    padding: 0px 20px 20px 20px !important;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row-reverse;
+    align-items: center;
+}
+
 .tittle-2 {
     text-align: end;
 }
@@ -76,7 +84,11 @@
         justify-content: center;
         gap: 20px;
     }
-
+    .boxe-container-3{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
     .img-boxe {
         width: 600px;
     }

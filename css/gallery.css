@@ -1,0 +1,14 @@
+.gallery-img-bg {
+    width: 100%;
+    height: auto;
+    background-color: var(--color-background-2);
+    display: flex;
+    margin-top: 20px;
+}
+
+.gallery-img {
+    height: 300px;
+    width: 350px;
+    object-fit: cover;
+    display: inline-block;
+}

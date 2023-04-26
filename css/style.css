@@ -9,9 +9,11 @@
 @import url(cards.css);
 @import url(boxe.css);
 @import url(ct-info.css);
+@import url(contact.css);
 @import url(slider-contact.css);
 @import url(offers.css);
 @import url(equipment.css);
+@import url(gallery.css);
 @import url(footer.css);
 @import url(hall.css);
 
@@ -38,9 +40,6 @@ html {
     max-width: 1400px;
     margin: 0 auto;
     scroll-behavior: smooth;
-}
-
-body {
     overflow-x: hidden !important;
 }
 
