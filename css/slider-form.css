@@ -57,7 +57,7 @@
   font-size: 2.5rem;
   color: #612E6C;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 2px;
 }
 
 .form-contact {
@@ -75,7 +75,9 @@
   border-bottom: 2px solid lightgrey;
   outline: none;
   min-width: 180px;
-  width: 600px;
+  width: 610px;
+  border-radius: 0px 0px 6px 6px;
+  padding: 5px;
   margin-bottom: 1rem;
   font-size: 16px;
   transition: all .3s ease-out;
@@ -93,6 +95,10 @@
   color:transparent;
 }
 
+.label-float input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px #dad8d8fa inset;
+}
+
 .label-float label{
   color: var(--color-text-4);
   pointer-events: none;
@@ -105,13 +111,6 @@
   -moz-transition: all .3s ease-out;
 }
 
-.label-float input:required:invalid + label{
-  color: var(--color-text-4);
-}
-.label-float input:focus:required:invalid{
-  border-bottom: 2px solid red;
-}
-
 .label-float input:focus + label,
 .label-float input:not(:placeholder-shown) + label{
   font-size: 16px;
@@ -121,7 +120,6 @@
 
 textarea {
   border: transparent;
-  height: 97px;
   border-bottom: 2px solid lightgray;
   margin-top: 1rem;
 }
@@ -142,7 +140,8 @@ input:not(:focus):valid~.floating-label {
 }
 
 .scheme-des textarea {
-  width: 600px;
+  width: 610px;
+  height: 85px;
   resize: none;
 }
 
@@ -177,7 +176,7 @@ input:not(:focus):valid~.floating-label {
 
 #erro-nome, #erro-email, #erro-telefone {
   position: absolute;
-  top: 40px;
+  top: 48px;
   color: rgb(233, 59, 59);
   font-size: 14px;
 }
@@ -186,7 +185,7 @@ input:not(:focus):valid~.floating-label {
   position: absolute;
   color: rgb(233, 59, 59);
   font-size: 14px;
-  top: 115px;
+  top: 100px;
 }
 
 .btn-contact:hover {

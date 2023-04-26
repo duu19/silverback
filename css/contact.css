@@ -56,10 +56,6 @@
     gap: 20px;
 }
 
-.contact-ul-icons-box a {
-    color: #fff;
-}
-
 .contact-icon {
     font-size: 3.5rem;
 }
@@ -71,4 +67,31 @@
 
 .contact-icons-box p {
     font-size: 1rem;
+}
+
+.contact-ul-icons-box a {
+    color: #fff;
+}
+
+.contact-ul-icons-box a:hover {
+    transition: 0.4s;
+    color: #612E6C;
+}
+
+@media (max-width: 550px) {
+    .contact-map-box {
+        flex-wrap: wrap-reverse;
+    }
+    .contact-icons-box {
+        width: 100px;
+    }
+    .contact-text-box {
+        gap: 65px;
+    }
+    .contact-icon {
+        font-size: 1.5rem;
+    }
+    .contact-map-box p {
+        font-size: 10px;
+    }
 }

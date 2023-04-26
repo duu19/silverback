@@ -1,0 +1,125 @@
+@font-face {
+    src: url(../fonts/I\ AM\ A\ PLAYER.ttf);
+    font-family: 'Player-Regular';    
+    font-weight: normal;
+}
+
+.workout-bg {
+    height: auto;
+    width: 100%;
+    background-color: var(--color-background-2);
+}
+
+.workout-box {
+    display: flex;
+    gap: 30px;
+    position: relative;
+}
+
+.workout-bg img {
+    display: block;
+    object-fit: cover;
+}
+
+.workout-img-1 {
+    width: 450px;
+    height: 631px;
+}
+
+.workout-text {
+    display: inline-block;
+    margin-top: 46px;
+    margin-bottom: 46px;
+    width: 100%;
+    color: var(--color-text-2);
+}
+
+.workout-text span {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    color: #612E6C;
+}
+
+.workout-text h2 {
+    font-size: 6rem;
+    letter-spacing: 2px;
+    color: var(--color-text-4);
+    text-transform: uppercase;
+}
+
+.workout-btn {
+    border: none;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    display: inline-block;
+    background: #612E6C;
+}
+
+.workout-btn:hover {
+    transition: 0.4s;
+    background: var(--color-text-4);
+}
+
+.workout-img-2 {
+    width: 400px;
+    height: 240px;
+}
+
+.workout-imgs-box {
+    display: flex;
+    gap: 30px;
+}
+
+.workout-square-bg {
+    background: var(--color-text-2);
+    width: 350px;
+    height: 240px;
+    color: #fff;
+    font-size: 1.2rem;
+    position: relative;
+}
+
+.workout-square-text {
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.workout-square-text h4 {
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.workout-square-text p {
+    color: #d3d3d3;
+    text-align: center;
+}
+
+@media (max-width: 550px) {
+    .workout-box {
+        flex-wrap: wrap;
+    }
+    .workout-text {
+        margin-top: 0px;
+        margin-bottom: 30px;
+    }
+    .workout-text span {
+        font-size: 1rem;
+    }
+    .workout-text h2 {
+        font-size: 5rem;
+    }
+    .workout-imgs-box {
+        flex-wrap: wrap;
+    }
+    .workout-img-2 {
+        width: 350px;
+    }
+}

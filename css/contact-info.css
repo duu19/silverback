@@ -68,8 +68,8 @@ img {
 
 .btn-info:hover {
     transition: 0.5s;
-    color: #dcbbe4;
-    border-bottom: 2px solid #dcbbe4;
+    color: #612E6C;
+    border-bottom: 2px solid #612E6C;
 }
 
 @media (max-width: 900px) {
