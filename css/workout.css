@@ -103,6 +103,9 @@
 }
 
 @media (max-width: 550px) {
+    .workout-imgs-box {
+        gap: 0px;
+    }
     .workout-box {
         flex-wrap: wrap;
     }
@@ -121,5 +124,15 @@
     }
     .workout-img-2 {
         width: 350px;
+    }
+}
+
+@media (max-width: 360px) {
+    .workout-img-2 {
+        width: 300px;
+    }
+    .workout-square-bg {
+        width: 300px;
+        font-size: 14px;
     }
 }

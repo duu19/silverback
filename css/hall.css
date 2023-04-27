@@ -323,7 +323,7 @@
 }
 
 .p-weight-5::before {
-    content: '135 lbs (61.36 kg)';
+    content: '134.25 lbs (60.91 kg)';
     color: var(--color-text-4);
     font-family: 'Lato', sans-serif;
     font-weight: 700;
@@ -335,7 +335,7 @@
 }
 
 .p-age-5::before {
-    content: '41';
+    content: '24';
     color: var(--color-text-4);
     font-family: 'Lato', sans-serif;
     font-weight: 700;
@@ -347,7 +347,7 @@
 }
 
 .p-home-5::before {
-    content: 'Cuba, Miami, Florida';
+    content: 'Mex, MEXICO CITY';
     color: var(--color-text-4);
     font-family: 'Lato', sans-serif;
     font-weight: 700;
@@ -381,11 +381,101 @@
     width: 250px;
 }
 
+.highlights-bg {
+    height: auto;
+    background: var(--color-background-2);
+    width: 100%;
+}
+
+.highlights-title {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    color: var(--color-text-4);
+    text-transform: uppercase;
+    font-family: 'Player-Regular';
+    padding-bottom: 0px !important;
+}
+
+.video-box {
+    display: flex;
+    align-items: center;
+}
+
+.main-video-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.video-title {
+    font-family: 'Player-Regular';
+    font-size: 1.5rem;
+    color: #612E6C;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.playlist-video-info {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-family: 'Player-Regular';
+}
+
+.main-video-content video {
+    width: 800px;
+}
+
+.playlist {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    max-height: 400px;
+}
+
+.playlist::-webkit-scrollbar {
+    width: 6px;
+}
+
+.playlist::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #612E6C;
+}
+
+.playlist-video {
+    display: flex;
+    align-items: center;
+    width: 425px;
+    gap: 50px;
+    padding: 20px;
+    margin-right: 5px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    cursor: pointer;
+}
+
+.active2 {
+    color: #fff;
+    background-color: #612E6C;
+}
+
+.playlist-video video {
+    width: 250px;
+}
 
 @media (max-width: 1100px) {
     .hall-cards-box {
         flex-wrap: wrap;
         justify-content: center;
+    }
+}
+
+@media (max-width: 900px) {
+    .video-box {
+        flex-direction: column;
+    }
+    .main-video-content video {
+        width: 100%;
     }
 }
 
@@ -399,19 +489,44 @@
 }
 
 @media (max-width: 450px){
+    .playlist-video {
+        width: 350px;
+        justify-content: space-around;
+    }
+    .playlist-video video {
+        width: 150px;
+    }
     .icons-box img {
         width: 100px;
     }
     .icons-box-2 img {
         width: 100px;
+    }
+    .section-hall-bg h1 {
+        font-size: 14px;
     }
 }
 
 @media (max-width: 360px) {
+    .section-hall-bg h1 {
+        font-size: 12px;
+    }
     .icons-box img {
         width: 40px;
     }
     .icons-box-2 img {
         width: 40px;
+    }
+    .hall-cards img {
+        width: 300px;
+    }
+    .hall-card-about {
+        width: 300px;
+    }
+    .hall-card-record {
+        width: 300px;
+    }
+    .hall-card-stats {
+        width: 300px;
     }
 }

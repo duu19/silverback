@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
     <title> SILVERBACK - HALL </title>
+    <!-- css -->
     <link rel="stylesheet" href="./css/style.css">
+    <!-- favicon -->
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <!-- bootstrap icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
@@ -25,16 +27,19 @@
             <li><a href="index.html">início</a></li>
             <li><a href="#fighters">lutadores</a></li>
             <li><a href="#sponsors">parceiros</a></li>
+            <li><a href="#highlights">highlights</a></li>
           </ul>
         </nav>
       </header>
 
+      <!-- main -->
       <main class="main-hall-bg">
         <div class="main-box">
             <h1>TRAIN HARD<br>BE KIND</h1>
         </div>
-    </main>
+      </main>
 
+    <!-- cards -->
       <section class="section-hall-bg" id="fighters">
         <div class="container">
             <h1>lutadores que treinaram conosco</h1>
@@ -122,13 +127,13 @@
                 
                 </div>
                 <div class="hall-cards">
-                    <img src="img/Gamboa.jpg" alt="Yuriorkis Gamboa">
+                    <img src="img/cruz.jpg" alt="Pitbull Cruz">
                             <div class="hall-card-about">
-                                <p>Yuriorkis <br> "El ciclon de guantanamo" <br> Gamboa</p>
+                                <p>Isaac <br> "Pitbull" <br> Cruz</p>
                             </div>
                             <div class="hall-card-record">
-                                <p class="record">30-5-0</p>
-                                <p class="kos">18</p>
+                                <p class="record">24-2-1</p>
+                                <p class="kos">17</p>
                             </div>
                             <div class="hall-card-stats">
                                 <p class="p-weight-5">peso</p>
@@ -140,6 +145,7 @@
             </div>
       </section>
 
+      <!-- parceiros -->
       <aside id="sponsors">
         <div class="sponsors-bg">
             <div class="icons-box container">
@@ -154,7 +160,20 @@
             </div>
         </div>
       </aside>
+      
+      <!-- highlights -->
+      <section class="highlights-bg" id="highlights">
+          <h2 class="highlights-title container">highlights</h2>
+          <div class="container video-box">
+            <div class="main-video-content">
+                <video src="" controls muted autoplay></video>
+                <label for="main-info" class="video-title"></label>
+            </div>
+            <div class="playlist"></div>
+        </div>
+      </section>
 
+      <!-- footer -->
       <footer class="footer-bg">
         <div class="footer-box container">
             <div>
@@ -207,5 +226,6 @@
     
 <!-- mobile menu - slider  -->
 <script src="js/script.js"></script>
+<script type="module" src="js/videos.js"></script>
 </body>
 </html>
