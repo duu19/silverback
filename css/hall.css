@@ -490,7 +490,7 @@
 
 @media (max-width: 450px){
     .playlist-video {
-        width: 350px;
+        width: 100%;
         justify-content: space-around;
     }
     .playlist-video video {

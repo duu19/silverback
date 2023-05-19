@@ -53,6 +53,7 @@
     color: var(--color-text-1);
     text-align: center;
     padding: 20px;
+    padding-top: 0px !important;
     font-size: 1.2rem;
 }
 

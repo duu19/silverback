@@ -65,7 +65,7 @@
 }
 
 .workout-img-2 {
-    width: 400px;
+    width: 800px;
     height: 240px;
 }
 
@@ -76,7 +76,7 @@
 
 .workout-square-bg {
     background: var(--color-text-2);
-    width: 350px;
+    width: 100%;
     height: 240px;
     color: #fff;
     font-size: 1.2rem;
