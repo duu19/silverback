@@ -12,7 +12,7 @@
 
 .workout-box {
     display: flex;
-    gap: 30px;
+    gap: 20px;
     position: relative;
 }
 
@@ -26,26 +26,52 @@
     height: 631px;
 }
 
+.workout-text-box {
+    display: flex;
+    gap: 20px;
+}
+
+.info-text-box {
+    background: var(--color-text-2);
+    color: var(--color-text-1);
+    font-size: 16px;
+    text-align: center;
+    width: 413px;
+    height: 350px;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
 .workout-text {
-    display: inline-block;
-    margin-top: 46px;
-    margin-bottom: 46px;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 10px;
+    width: 461px;
+    height: 350px;
+    padding: 20px;
+    background: #612E6C;
     color: var(--color-text-2);
 }
 
 .workout-text span {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     text-transform: uppercase;
     font-weight: bolder;
     letter-spacing: 2px;
-    color: #612E6C;
+    color: #fff;
+    font-style: italic;
 }
 
 .workout-text h2 {
-    font-size: 6rem;
+    font-size: 2rem;
     letter-spacing: 2px;
-    color: var(--color-text-4);
+    color: var(--color-text-1);
     text-transform: uppercase;
 }
 
@@ -56,45 +82,43 @@
     padding: 10px 20px;
     text-transform: uppercase;
     display: inline-block;
-    background: #612E6C;
+    background: var(--color-text-2);
 }
 
 .workout-btn:hover {
     transition: 0.4s;
-    background: var(--color-text-4);
+    background: #fff;
+    color: #612E6C;
 }
 
 .workout-img-2 {
-    width: 800px;
-    height: 240px;
+    width: 546px;
+    height: 261px;
 }
 
 .workout-imgs-box {
     display: flex;
-    gap: 30px;
+    gap: 20px;
 }
 
 .workout-square-bg {
     background: var(--color-text-2);
-    width: 100%;
-    height: 240px;
+    width: 490px;
+    height: 261px;
     color: #fff;
     font-size: 1.2rem;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .workout-square-text {
-    width: 300px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 20px;
 }
 
 .workout-square-text h4 {
     text-transform: uppercase;
-    margin-bottom: 8px;
-    text-align: center;
 }
 
 .workout-square-text p {
@@ -102,22 +126,40 @@
     text-align: center;
 }
 
-@media (max-width: 550px) {
+@media (max-width: 900px) {
+    .workout-bg img {
+        width: 100%;
+    }
+    .workout-box {
+        flex-wrap: wrap;
+    }
+    .workout-text-box {
+        flex-direction: column;
+    }
+    .workout-text {
+        align-items: center;
+    }
+    .workout-text, .info-text-box, .workout-square-bg {
+        width: 100%;
+    }
     .workout-imgs-box {
-        gap: 0px;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 550px) {
+    .workout-text h2 {
+        font-size: 1.5rem;
+        white-space: nowrap;
     }
     .workout-box {
         flex-wrap: wrap;
     }
     .workout-text {
         margin-top: 0px;
-        margin-bottom: 30px;
     }
     .workout-text span {
         font-size: 1rem;
-    }
-    .workout-text h2 {
-        font-size: 5rem;
     }
     .workout-imgs-box {
         flex-wrap: wrap;
@@ -130,9 +172,5 @@
 @media (max-width: 360px) {
     .workout-img-2 {
         width: 300px;
-    }
-    .workout-square-bg {
-        width: 300px;
-        font-size: 14px;
     }
 }
