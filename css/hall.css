@@ -162,7 +162,7 @@
 }
 
 .p-home-0::before {
-    content: 'USA, Baltimore, Maryland';
+    content: 'USA';
     color: var(--color-text-4);
     font-family: 'Lato', sans-serif;
     font-weight: 700;
@@ -199,7 +199,7 @@
 }
 
 .p-home-1::before {
-    content: 'Philippines, General Santos';
+    content: 'Philippines';
     color: var(--color-text-4);
     font-family: 'Lato', sans-serif;
     font-weight: 700;
@@ -236,7 +236,7 @@
 }
 
 .p-home-2::before {
-    content: 'USA, Tuscaloosa, Alabama';
+    content: 'USA';
     color: var(--color-text-4);
     font-family: 'Lato', sans-serif;
     font-weight: 700;
@@ -273,7 +273,7 @@
 }
 
 .p-home-3::before {
-    content: 'USA, Imperial, California';
+    content: 'USA';
     color: var(--color-text-4);
     font-family: 'Lato', sans-serif;
     font-weight: 700;
@@ -310,7 +310,7 @@
 }
 
 .p-home-4::before {
-    content: 'USA, Houston, Texas ';
+    content: 'USA';
     color: var(--color-text-4);
     font-family: 'Lato', sans-serif;
     font-weight: 700;
@@ -347,7 +347,7 @@
 }
 
 .p-home-5::before {
-    content: 'Mex, MEXICO CITY';
+    content: 'Mex';
     color: var(--color-text-4);
     font-family: 'Lato', sans-serif;
     font-weight: 700;

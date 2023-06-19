@@ -23,7 +23,7 @@
 
 .workout-img-1 {
     width: 450px;
-    height: 631px;
+    height: 542px;
 }
 
 .workout-text-box {
@@ -37,7 +37,7 @@
     font-size: 16px;
     text-align: center;
     width: 413px;
-    height: 350px;
+    height: 261px;
     padding: 20px;
     margin-bottom: 20px;
     display: flex;
@@ -53,7 +53,7 @@
     align-items: start;
     gap: 10px;
     width: 461px;
-    height: 350px;
+    height: 261px;
     padding: 20px;
     background: #612E6C;
     color: var(--color-text-2);
@@ -169,7 +169,22 @@
     }
 }
 
+@media (max-width: 478px) {
+    .workout-text h2, .info-text-box {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 395px) {
+    .workout-text h2, .info-text-box {
+        font-size: 14px;
+    }
+}
+
 @media (max-width: 360px) {
+    .workout-text span {
+        font-size: 12px;
+    }
     .workout-img-2 {
         width: 300px;
     }
